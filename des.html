@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="des.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+    publicKey: "d9c3ggYYvjbyz01o0",
+    });
+})();
+</script>
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <form action="https://formsubmit.co/abdulmuizzdandy@gmail.com" method="POST">
+                <a href="index.html"><img class="ert" src="logo.jpg">
+                    <div class="logo">
+
+                    
+                            </div></a>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" name="name" required>
+                <label for=""> <i class="bx bxs-user">   Userame</i></label>
+                
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" required>
+                <label for=""><i class="bx bxs-lock-alt">   Password</i></label>
+                
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="fog.html">Forgot Password</a>
+            </div>
+            <button type="submit" class="btn" onclick="sendMail()" >Login</button>
+            <div class="register-link">
+                <p>Don't have an account?<a href="signin.html"
+                    class="signUpBtn-Link">signup</a></p>
+            </div>
+        </div>
+        <input type="hidden" name="_captcha" value="false">
+        </form>   
+    
+     <script src="script.js"></script> 
+    </div>
+    
+</body>
+</html>
